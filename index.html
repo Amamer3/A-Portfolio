@@ -585,7 +585,7 @@
                                         <i class="fas fa-map-marker-alt"></i>
                                     </div>
                                     <div class="info">
-                                        <p>Root 69, Ashongman-Estate<span>Natech</span></p>
+                                        <p>Dakota Street, Ashongman Estate<span>Natech</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -615,7 +615,7 @@
 
 
 
-
+    <progress id="progress" class="progress" value="0" max="100"></progress>
 
 
 
@@ -631,6 +631,21 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        const progressElem = document.querySelector('#progress')
+
+        const html = document.querySelector('html')
+
+        function scrollHandler(){
+            const screenHeight = window.innerHeight
+            const scrollY = window.scrollY
+
+            console.log(screenHeight, scrollY)
+        }
+        window.addEvenListner('scroll', scrollHandler
+        )
+    </script>
 
     <script>
         AOS.init({
